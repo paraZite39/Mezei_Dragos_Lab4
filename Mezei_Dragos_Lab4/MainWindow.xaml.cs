@@ -108,6 +108,7 @@ namespace Mezei_Dragos_Lab4
                         Contract_value = Decimal.Parse(contract_valueTextBox.Text.Trim()),
                         Contract_date = contract_dateDatePicker.SelectedDate
                     };
+
                     ctx.Customer.Add(customer);
                     customerViewSource.View.Refresh();
                     ctx.SaveChanges();
